@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwirty – Smart, Stylish Stationery</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <h1 class="logo">✒️ Qwirty</h1>
+
+        <!-- Hamburger menu (for mobile) -->
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav role="navigation" aria-label="Main navigation" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">🛒 Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Smart, Stylish Stationery</h2>
+          <p>Find your perfect pens, notebooks, and office essentials.</p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              src="https://www.boutiquegifts.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/o/solid_black_moleskine_notebook_1.png"
+              alt="Classic notebook"
+            />
+            <h3>Classic Notebook</h3>
+            <p>$12.99</p>
+            <button>Add to Cart</button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/gelpen.jpg" alt="Gel Pen Set" />
+            <h3>Gel Pen Set</h3>
+            <p>$8.49</p>
+            <button>Add to Cart</button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/sticky.jpg" alt="Sticky Notes" />
+            <h3>Sticky Notes</h3>
+            <p>$4.25</p>
+            <button>Add to Cart</button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/deskorganizer.jpg" alt="Desk Organizer" />
+            <h3>Desk Organizer</h3>
+            <p>$16.75</p>
+            <button>Add to Cart</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Qwirty. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </div>
+        <div class="social-media">
+          <a href="#" aria-label="Instagram">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+              alt="Instagram logo"
+            />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+              alt="Facebook logo"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Hamburger toggle script -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav-menu");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", !expanded);
+      });
+    </script>
+  </body>
+</html>
